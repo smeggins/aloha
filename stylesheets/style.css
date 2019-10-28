@@ -187,6 +187,21 @@ a:visited {
 	color: #e2574c;
 }
 
+a:link {
+	text-decoration: none;
+	color: #e2574c;
+}
+
+a:active {
+	text-decoration: none;
+	color: #e2574c;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #e2574c;
+}
+
 i {
 	font-style: italic;
 }
@@ -325,27 +340,27 @@ header h1 {
 
 /* introduction paragraph */
 
-.intro {
+#intro {
     font-size: 1.6rem;
     width: 100%;
     text-align: center;
     margin: 10% 0px; 
 }
 
-.intro h2 {
+#intro h2 {
 	margin-bottom: 20px;
 	font-size: 1.9em;
 }
 
-.intro i {
+#intro i {
 	font-style: italic;
 }
 
-.intro b {
+#intro b {
 	font-weight: bold;
 }
 
-.intro p {
+#intro p {
     font-size: 0.8em;
     font-weight: 300;
     width: 80%;
@@ -353,14 +368,14 @@ header h1 {
     margin: 0 auto;
 }
 
-.intro article {
+#intro article {
 	line-height: 1.8;
 	font-family: "raleway";
 }
 
 /* shopping links section */
 
-.shopLinks {
+#shopLinks {
 	width: 100%;
 	height: auto;
 
@@ -475,14 +490,14 @@ height: 100%;
 
 /* Product Highlights Section */
 
-.productHighlight {
+#productHighlight {
 	width: 100%;
 	height: 1000px;
 	text-align: center;
 	font-size: 50px;
 }
 
-.productHighlight h2 {
+#productHighlight h2 {
 	position: relative;
 	top: 60px;
 	margin-bottom: 30px;
@@ -550,7 +565,7 @@ margin-bottom: 40px;
 	/* Sign-up */
 
 
-.signUp {
+#signUp {
     width: 100%;
     height: 420px;
     background-image: url(../images/wave-bkgd.jpg);
@@ -575,22 +590,22 @@ margin-bottom: 40px;
 	overflow: scroll;
 }
 
-.signUp i {
+#signUp i {
 	font-style: italic;
 }
 
-.signUp b {
+#signUp b {
 	font-weight: bold;
 }
 
-.signUp p {
+#signUp p {
     font-size: 1.6rem;
     position: relative;
 	top: 30px;
 	line-height: 1.9;
 }
 
-.signUp form {
+#signUp form {
     position: relative;
     top: 125px;
 }
@@ -602,7 +617,7 @@ margin-bottom: 40px;
     width: 89%;
     height: 67px;
     font-size: 1.4em;
-    color: lightgrey;
+    color: black;
 }
 
 #addEmailSubmit {
@@ -730,11 +745,11 @@ footer {
 
 	/* intro paragraph */
 
-	.intro h2 {
+	#intro h2 {
 		font-size: 6vw;
 	}
 	
-	.intro p {
+	#intro p {
 		font-size: 3vw;
 		width: 96%;
 	}
@@ -794,7 +809,7 @@ footer {
 		/* Product Highlights */
 		/* Sign-up */
 
-		.signUp {
+		#signUp {
 			height: 300px;
 			background-position-y: 95%;
 			background-size: auto;
@@ -806,12 +821,12 @@ footer {
 			overflow: unset;
 		}
 		
-		.signUp p {
+		#signUp p {
 			font-size: 1.1rem;
 			top: 18px;
 		}
 		
-		.signUp form {
+		#signUp form {
 			top: 86px;
 			width: 365px;
 			margin: 0 auto;
@@ -896,17 +911,17 @@ footer {
 
 	/* introduction paragraph */
 
-.intro {
-    width: 50%;
-    margin: 4% 0px; 
+	#intro {
+    	width: 50%;
+    	margin: 4% 0px; 
 }
 
-.intro h2 {
-	font-size: 3vw;
+	#intro h2 {
+		font-size: 3vw;
 }
 
-.intro p {
-    font-size:1.5vw;
+	#intro p {
+    	font-size:1.5vw;
 }
 
 	/* shopping links */
@@ -914,4 +929,5 @@ footer {
 	.shopLinks1 span, .shopLinks2 span {
 		font-size: 3.3vw;
 	
+}
 }

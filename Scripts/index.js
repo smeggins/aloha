@@ -1,4 +1,4 @@
-
+document.addEventListener("DOMContentLoaded", function() {
 
 let ProductHighlight1 = {
     category: "DRESSES",
@@ -56,22 +56,25 @@ let ProductHighlight8 = {
     image: "images/blue-silk-dress.jpg",
 };
 
-let imgs = document.querySelectorAll('.carousel-cell img')
-let category = document.querySelectorAll('.carousel-cell .phCategory')
-let price = document.querySelectorAll('.phPrice')
-let name = document.querySelectorAll('.phName')
+let imgs = document.querySelectorAll('.carousel-cell img');
+let category = document.querySelectorAll('.carousel-cell .phCategory');
+let price = document.querySelectorAll('.phPrice');
+let name = document.querySelectorAll('.phName');
+let email = document.getElementById('addEmail')
+let allForms = document.getElementsByTagName("form");
+let subForm = document.getElementById('subscribe');
 
 let allCategory =[ProductHighlight1.category, ProductHighlight2.category, ProductHighlight3.category, ProductHighlight4.category, 
-                ProductHighlight5.category, ProductHighlight6.category, ProductHighlight7.category, ProductHighlight8.category]
+                ProductHighlight5.category, ProductHighlight6.category, ProductHighlight7.category, ProductHighlight8.category];
 
 let allName = [ProductHighlight1.name, ProductHighlight2.name, ProductHighlight3.name, ProductHighlight4.name, 
-                ProductHighlight5.name, ProductHighlight6.name, ProductHighlight7.name, ProductHighlight8.name]
+                ProductHighlight5.name, ProductHighlight6.name, ProductHighlight7.name, ProductHighlight8.name];
 
 let allPrice = [ProductHighlight1.price, ProductHighlight2.price, ProductHighlight3.price, ProductHighlight4.price, 
-                ProductHighlight5.price, ProductHighlight6.price, ProductHighlight7.price, ProductHighlight8.price]
+                ProductHighlight5.price, ProductHighlight6.price, ProductHighlight7.price, ProductHighlight8.price];
 
 let allImages =[ProductHighlight1.image, ProductHighlight2.image, ProductHighlight3.image, ProductHighlight4.image, 
-                ProductHighlight5.image, ProductHighlight6.image, ProductHighlight7.image, ProductHighlight8.image]
+                ProductHighlight5.image, ProductHighlight6.image, ProductHighlight7.image, ProductHighlight8.image];
 
 for (let i = 0; i < imgs.length; i++) {
     
@@ -84,4 +87,25 @@ for (let i = 0; i < imgs.length; i++) {
     price[i].innerHTML = allPrice[i];
     
     name[i].innerHTML = allName[i];
-}
+};
+
+for (let i = 0; i < allForms.length; i++) {
+    
+    allForms[i].addEventListener('submit', function(event) {
+        event.preventDefault();
+          });
+};
+
+subForm.addEventListener('submit', function(test){
+    let emailValue = email.value
+    if (emailValue) {
+        alert('Thank you for subscribing!')
+    }
+    else {
+        alert('Please enter a valid email address')
+    }
+
+});
+
+
+});
