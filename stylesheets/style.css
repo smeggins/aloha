@@ -547,6 +547,9 @@ margin-bottom: 40px;
 	background-color: rgb(65, 65, 65);
 }
 
+	/* Sign-up */
+
+
 .signUp {
     width: 100%;
     height: 420px;
@@ -613,6 +616,8 @@ margin-bottom: 40px;
     background-color: #e2574c;
     font-size: 4.5vw;
 }
+
+/* Start Of Footer */
 
 footer {
 	display: flex;
@@ -783,6 +788,71 @@ footer {
 		min-width: 0;
 		margin: 0px 0px 0px 0px;
 		flex-basis: 10px;
+	}
+		
+		/* Product Highlights */
+		/* Sign-up */
+
+		.signUp {
+			height: 300px;
+			background-position-y: 95%;
+			background-size: auto;
+		}
+		
+		.signUpContainer {
+			width: 553px;
+			top: 45px;
+			overflow: unset;
+		}
+		
+		.signUp p {
+			font-size: 1.1rem;
+			top: 18px;
+		}
+		
+		.signUp form {
+			top: 86px;
+			width: 365px;
+			margin: 0 auto;
+		}
+		
+		#addEmail {
+			padding-right: 41%;
+			width: 365px;
+			height: 47px;
+		}
+		
+		#addEmailSubmit {
+			left: 29%;
+			bottom: 43px;
+			width: 40%;
+			height: 40px;
+			font-size: 19px;
+		}
+
+		/* footer */
+		
+	footer {
+		flex-direction: row;
+	}
+
+	.contact li {
+		text-align: left;
+	}
+
+	.socialMedia ul {
+		align-items: unset;
+		flex-direction: column;
+		bottom: 0px;
+		right: 8vw;
+	}
+
+	.socialMedia li {
+		margin: 9px;
+	}
+
+	.sMediaName {
+		display: inline-block;
 	}
 }
 
