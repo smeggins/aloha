@@ -323,6 +323,8 @@ header h1 {
 	max-height: 100%;
 }
 
+/* introduction paragraph */
+
 .intro {
     font-size: 1.6rem;
     width: 100%;
@@ -352,10 +354,11 @@ header h1 {
 }
 
 .intro article {
-	font-size: 1.2em;
 	line-height: 1.8;
 	font-family: "raleway";
 }
+
+/* shopping links section */
 
 .shopLinks {
 	width: 100%;
@@ -669,9 +672,14 @@ footer {
 
 
 @media screen and (min-width: 600px) {
+
+	/* sweeping changes */
+
 	html {
 		font-size: 16px;
 	}
+
+	/* Top navbar */
 
 	.alohaLogo {
 		width: 19%;
@@ -696,10 +704,39 @@ footer {
 		width: 9%;
 	}
 
-	.bannerGirl {
-		width: 14.5rem;
+	/* header */
+
+	header {
+		height: 65vw;
+		max-height: 520px;
+		background-repeat: repeat-x;
 	}
+	
+	header h1 {
+		top: 38%;
+		font-size: 7vw;
+	}
+	
+	.bannerGirl {
+		width: 25vw;
+		max-height: 94%;
+	}
+
+	/* intro paragraph */
+
+	.intro h2 {
+		font-size: 6vw;
+	}
+	
+	.intro p {
+		font-size: 3vw;
+		width: 96%;
+	}
+	
+	/* shopping links section */
 }
+
+
 
 @media all and (min-width: 1240px) {
 
