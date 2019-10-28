@@ -4,46 +4,54 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
         <link rel="stylesheet" href="fonts/Icofonts/icofonts.css">
+        <link rel="stylesheet" href="stylesheets/flickity.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <!--
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+        -->
         <title>
             Aloha
         </title>
     </head>
     <body>
         <nav class="topNav">
-            <div class="alohaLogo">
-                <a href="" title="Go to Aloha Home">
-                    <img class="logo" src="images/aloha-logo.svg" alt="aloha logo">
-                </a>
+            <div id="navTopSection">
+                <div class="alohaLogo">
+                    <a href="" title="Go to Aloha Home">
+                        <img class="logo" src="images/aloha-logo.svg" alt="aloha logo">
+                    </a>
+                </div>
+                <div class="shoppingCart">
+                    <a href="" title="Go to Aloha Home">
+                        <img class="cartIcon" src="images/cart-icon.svg" alt="aloha logo">
+                    </a>
+                </div>
             </div>
+            <div id="navline"></div>
             <div class="headerNavs">
-                <ul>
-                    <li class="navs">
-                        <a href="" title="">
-                            ABOUT
-                        </a>
-                    </li>
-                    <li class="navs">
-                        <a href="" title="">
-                            SHOP
-                        </a>
-                    </li>
-                    <li class="navs">
-                        <a href="" title="">
-                            FEATURED
-                        </a>
-                    </li>
-                    <li class="navs">
-                        <a href="" title="">
-                            UPDATES
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="shoppingCart">
-                <a href="" title="Go to Aloha Home">
-                    <img class="cartIcon" src="images/cart-icon.svg" alt="aloha logo">
-                </a>
-            </div>
+                    <ul>
+                        <li class="navs">
+                            <a href="" title="">
+                                ABOUT
+                            </a>
+                        </li>
+                        <li class="navs">
+                            <a href="" title="">
+                                SHOP
+                            </a>
+                        </li>
+                        <li class="navs">
+                            <a href="" title="">
+                                FEATURED
+                            </a>
+                        </li>
+                        <li class="navs">
+                            <a href="" title="">
+                                UPDATES
+                            </a>
+                        </li>
+                    </ul>
+                </div>
         </nav>
         <main>
             <header>
@@ -72,7 +80,7 @@
             <section class="shopLinks">
                 <section class="shopLinks1">
                     <div class="mens">
-                        <a href="">
+                        <a id="test" href="">
                             <img class="mensL" src="images/mens-category.jpg" alt="mens">
                         </a>
                         <span class="mensTitle">
@@ -124,12 +132,61 @@
                 </section>
             </section>
             <section class="productHighlight">
-                <h2>
-                    <i>Most-Loved</i> <B>Products</B>
-                </h2>
-                <script>
-                
-                </script>
+                <div class="mostLovedContainer">
+                    <h2>
+                        <i>Most-Loved</i> <b>Products</b>
+                    </h2>
+                </div>
+                <div class="carousel js-flickity">
+                    <div class="carousel-cell">
+                        <img class="highlightimg" alt="blue silk dress" />
+                        <span class="phCategory"></span>
+                        <span class="phName"></span>
+                        <span class="phPrice"></span>
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="highlightimg"/>
+                        <span class="phCategory"></span>
+                        <span class="phName"></span>
+                        <span class="phPrice"></span>
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="highlightimg"/>
+                        <span class="phCategory"></span>
+                        <span class="phName"></span>
+                        <span class="phPrice"></span>
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="highlightimg"/>
+                        <span class="phCategory"></span>
+                        <span class="phName"></span>
+                        <span class="phPrice"></span>
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="highlightimg"/>
+                        <span class="phCategory"></span>
+                        <span class="phName"></span>
+                        <span class="phPrice"></span>
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="highlightimg"/>
+                        <span class="phCategory"></span>
+                        <span class="phName"></span>
+                        <span class="phPrice"></span>
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="highlightimg"/>
+                        <span class="phCategory"></span>
+                        <span class="phName"></span>
+                        <span class="phPrice"></span>
+                    </div>
+                    <div class="carousel-cell">
+                        <img class="highlightimg"/>
+                        <span class="phCategory"></span>
+                        <span class="phName"></span>
+                        <span class="phPrice"></span>
+                    </div>
+                </div>
             </section>
             <section class="signUp">
                 <div class="signUpContainer">
@@ -171,35 +228,40 @@
                     <li>
                         <a href="">
                                 <span class="icon-facebook"></span>
-                            Facebook
+                            <span class="sMediaName">Facebook</span>
                         </a>
                     </li>
                     <li>
                         <a href="">
                                 <span class="icon-twitter"></span>
-                            Twitter
+                            <span class="sMediaName">Twitter</span>
                         </a>
                     </li>
                     <li>
                         <a href="">
                                 <span class="icon-instagram"></span>
-                            Instagram
+                            <span class="sMediaName">Instagram</span>
                         </a>
                     </li>
                     <li>
                         <a href="">
                                 <span class="icon-pinterest"></span>
-                            Pintrest
+                            <span class="sMediaName">Pintrest</span>
                         </a>
                     </li>
                     <li>
                         <a href="">
                                 <span class="icon-google-plus"></span>
-                            Google+
+                            <span class="sMediaName">Google+</span>
                         </a>
                     </li>
                 </ul>
             </nav>
         </footer>
+        <script>
+            
+        </script>
+        <script src="Scripts/flickity.js"></script>
+        <script src="./Scripts/index.js"></script>
     </body>
 </html>
