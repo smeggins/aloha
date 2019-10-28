@@ -373,7 +373,7 @@ header h1 {
 	text-shadow: 1px 1px 4px black;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, 0px);
+	transform: translate(-50%, -50%);
 }
 
 .shopLinks1 div, .shopLinks2 div {
@@ -734,6 +734,56 @@ footer {
 	}
 	
 	/* shopping links section */
+	
+	
+	.shopLinks1 span, .shopLinks2 span {
+		font-size: 4vw;
+	}
+
+	.shopLinks1 div, .shopLinks2 div{
+		height: unset;
+	}
+	
+	.trends, .glasses, .sale, .bags {
+		min-width: 0;
+		max-width: none;
+	}
+
+	.shopLinks1 {
+		align-items: stretch;
+		flex-wrap: nowrap;
+		margin-bottom: 10px;
+	}
+	
+	.mens {
+	min-width: 0;
+	margin: 0px 10px 0px 0px;
+	flex-basis: 10px;
+	}
+	
+	.trends {
+		margin-right: 10px;
+	}	
+	
+	.shopLinks2 {
+		align-items: flex-start;
+		flex-wrap: nowrap;
+	}
+	
+	.sale {
+		margin-right: 10px;
+
+	}
+
+	.bags {
+		margin-right: 10px;
+	}
+	
+	.womens {
+		min-width: 0;
+		margin: 0px 0px 0px 0px;
+		flex-basis: 10px;
+	}
 }
 
 
