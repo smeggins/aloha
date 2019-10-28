@@ -170,7 +170,6 @@ html {
 
 body {
 	margin: 0 auto;
-	float: none;
 	color: #2d2d2d;
 	font-family: "raleway";
 }
@@ -195,10 +194,6 @@ b {
 	font-weight: bold;
 }
 
-.brandingcolor {
-	color: #e2574c;
-}
-
 /* start of Top Nav bar */
 
 .topNav {
@@ -208,7 +203,6 @@ b {
     justify-content: space-evenly;
     width: 100%;
     height: auto;
-    padding: 0;
     padding-bottom: 10px;
 }
 
@@ -316,7 +310,7 @@ header h1 {
 
 .bannerGirl {
 	position: absolute;
-    width: 14.5rem;
+    width: 16.5rem;
     bottom: -9%;
     text-align: center;
     margin: 0 auto;
@@ -515,9 +509,9 @@ margin-bottom: 40px;
 }
 
 .phName {
-color: red;
-font-family: "playfair";
-margin-bottom: 40px;
+	color: #e2574c;
+	font-family: "playfair";
+	margin-bottom: 40px;
 }
 
 .phPrice {
@@ -571,7 +565,8 @@ margin-bottom: 40px;
     text-align: center;
     top: 57px;
     color: white;
-    text-shadow: 1px 1px 4px black;
+	text-shadow: 1px 1px 4px black;
+	overflow: scroll;
 }
 
 .signUp i {
@@ -583,11 +578,10 @@ margin-bottom: 40px;
 }
 
 .signUp p {
-    font-size: 4vw;
+    font-size: 1.6rem;
     position: relative;
 	top: 30px;
 	line-height: 1.9;
-	width: 101%;
 }
 
 .signUp form {
@@ -675,7 +669,36 @@ footer {
 
 
 @media screen and (min-width: 600px) {
+	html {
+		font-size: 16px;
+	}
+
+	.alohaLogo {
+		width: 19%;
+		margin: 3% 0% 0% 2%;
+	}
 	
+	#navline {
+		display: none;
+	}
+	
+	.headerNavs {
+		position: absolute;
+		margin: 0% 0% 0% 2%;
+	} 
+	
+	.headerNavs li {
+		font-size: 2.4vw;
+	}
+	
+	.shoppingCart {
+		margin: 2% 2% 1% 68%;
+		width: 9%;
+	}
+
+	.bannerGirl {
+		width: 14.5rem;
+	}
 }
 
 @media all and (min-width: 1240px) {
