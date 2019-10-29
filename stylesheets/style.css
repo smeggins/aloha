@@ -65,7 +65,6 @@ table {
     font-style: normal;
 }
 
-
 @font-face {
     font-family: 'playfair';
     src: url('../fonts/playfair-italic/PlayfairDisplay-Italic.eot');
@@ -153,9 +152,9 @@ table {
 
 /* end of font declaration */
 
-/* LIST OF FONTS
-railway
-playfair
+/*					 LIST OF FONTS
+						railway
+						playfair
  */
 
 /* start of general css */
@@ -205,6 +204,7 @@ a:hover {
 i {
 	font-style: italic;
 }
+
 b {
 	font-weight: bold;
 }
@@ -298,12 +298,12 @@ header {
 
 .headerOverlay {
 	position: absolute;
-width: 100%;
-height: 100%;
-background: black;
-top: 0;
-opacity: .2;
-z-index: 2;
+	width: 100%;
+	height: 100%;
+	background: black;
+	top: 0;
+	opacity: .2;
+	z-index: 2;
 }
 
 header h1 {
@@ -322,7 +322,6 @@ header h1 {
     margin-bottom: 9%;
 }
 
-
 .bannerGirl {
 	position: absolute;
     width: 16.5rem;
@@ -333,7 +332,8 @@ header h1 {
 	left: 50%;
 	transform: translate(-50%, 0px);
 }
-.girl  {
+
+.bannerGirl img  {
 	max-width: 100%;
 	max-height: 100%;
 }
@@ -352,14 +352,6 @@ header h1 {
 	font-size: 1.9em;
 }
 
-#intro i {
-	font-style: italic;
-}
-
-#intro b {
-	font-weight: bold;
-}
-
 #intro p {
     font-size: 0.8em;
     font-weight: 300;
@@ -374,12 +366,6 @@ header h1 {
 }
 
 /* shopping links section */
-
-#shopLinks {
-	width: 100%;
-	height: auto;
-
-}
 
 .shopLinks1 span, .shopLinks2 span {
 	position: absolute;
@@ -403,44 +389,26 @@ header h1 {
 	justify-content: space-between;
 	width: 100%;
 	height: 50%;
-	margin: 0px 0px 5px 0px;
+	margin: 0px 0px 10px 0px;
 }
 
 .trends, .glasses, .sale, .bags {
 	min-width: 47%;
 	max-width: 49%;
+	height: 100%;
+	flex: 1 1 0px;
+}
+
+.shopLinks1 img, .shopLinks2 img {
+	width: 100%;
+	height: 100%;
 }
 
 .mens {
-height: 100%;
-min-width: 100%;
-flex: 2 1 7px;
-margin-bottom: 10px;
-}
-
-.mensL {
-width: 100%;
-height: 100%;
-}
-
-.trends {
 	height: 100%;
-	flex: 1 1 0px;
-}	
-
-.trendsL {
-	width: 100%;
-	height: 100%;
-}
-
-.glasses  {
-	height: 100%;
-	flex: 1 1 0px;
-}
-
-.glassesL {
-	width: 100%;
-	height: 100%;
+	min-width: 100%;
+	flex: 2 1 7px;
+	margin-bottom: 10px;
 }
 
 .shopLinks2 {
@@ -455,37 +423,11 @@ height: 100%;
 	margin: 0px 0px 10px 0px;
 }
 
-.sale {
-	height: 100%;
-	flex: 1 1 0px;
-
-}
-
-.saleL {
-	width: 100%;
-	height: 100%;
-}
-
-.bags {
-	height: 100%;
-	flex: 1 1 0px;
-}
-
-.bagsL {
-	width: 100%;
-	height: 100%;
-}
-
 .womens {
 	height: 100%;
 	min-width: 100%;
 	flex: 2 1 7px;
 	margin-top: 10px;
-}
-
-.womensL {
-	width: 100%;
-	height: 100%;
 }
 
 /* Product Highlights Section */
@@ -511,8 +453,8 @@ height: 100%;
 }
 
 .phCategory {
-font-size: .5em;
-margin-bottom: 5%;
+	font-size: .5em;
+	margin-bottom: 5%;
 }
 
 .phName {
@@ -520,13 +462,11 @@ margin-bottom: 5%;
 	font-family: "playfair";
 	font-size: 0.5em;
 	margin-bottom: 5%;
-
 }
 
 .phPrice {
-font-size: .7em;
-margin-bottom: 25%;
-
+	font-size: .7em;
+	margin-bottom: 25%;
 }
 
 .categNamePrice {
@@ -537,7 +477,6 @@ margin-bottom: 25%;
 }
 
 	/* Sign-up */
-
 
 #signUp {
     width: 100%;
@@ -562,14 +501,6 @@ margin-bottom: 25%;
     top: 57px;
     color: white;
 	text-shadow: 1px 1px 4px black;
-}
-
-#signUp i {
-	font-style: italic;
-}
-
-#signUp b {
-	font-weight: bold;
 }
 
 #signUp p {
@@ -730,7 +661,6 @@ footer {
 	
 	/* shopping links section */
 	
-	
 	.shopLinks1 span, .shopLinks2 span {
 		font-size: 4vw;
 	}
@@ -747,7 +677,10 @@ footer {
 	.shopLinks1 {
 		align-items: stretch;
 		flex-wrap: nowrap;
-		margin-bottom: 10px;
+	}
+
+	.trends, .sale, .bags {
+		margin-right: 10px;
 	}
 	
 	.mens {
@@ -756,22 +689,9 @@ footer {
 	flex-basis: 10px;
 	}
 	
-	.trends {
-		margin-right: 10px;
-	}	
-	
 	.shopLinks2 {
-		align-items: flex-start;
+		align-items: stretch;
 		flex-wrap: nowrap;
-	}
-	
-	.sale {
-		margin-right: 10px;
-
-	}
-
-	.bags {
-		margin-right: 10px;
 	}
 	
 	.womens {
@@ -780,52 +700,52 @@ footer {
 		flex-basis: 10px;
 	}
 		
-		/* Product Highlights */
+	/* Product Highlights */
 
-		#productHighlight h2 {
-			margin-bottom: 12%;
-		}
+	#productHighlight h2 {
+		margin-bottom: 12%;
+	}
 
-		/* Sign-up */
+	/* Sign-up */
 
-		#signUp {
-			height: 300px;
-			background-position-y: 95%;
-			background-size: auto;
-		}
-		
-		.signUpContainer {
-			width: 553px;
-			top: 45px;
-			overflow: unset;
-		}
-		
-		#signUp p {
-			font-size: 1.1rem;
-			top: 18px;
-		}
-		
-		#signUp form {
-			top: 86px;
-			width: 365px;
-			margin: 0 auto;
-		}
-		
-		#addEmail {
-			padding-right: 41%;
-			width: 365px;
-			height: 47px;
-		}
-		
-		#addEmailSubmit {
-			left: 29%;
-			bottom: 43px;
-			width: 40%;
-			height: 40px;
-			font-size: 19px;
-		}
+	#signUp {
+		height: 300px;
+		background-position-y: 95%;
+		background-size: auto;
+	}
+	
+	.signUpContainer {
+		width: 553px;
+		top: 45px;
+		overflow: unset;
+	}
+	
+	#signUp p {
+		font-size: 1.1rem;
+		top: 18px;
+	}
+	
+	#signUp form {
+		top: 86px;
+		width: 365px;
+		margin: 0 auto;
+	}
+	
+	#addEmail {
+		padding-right: 41%;
+		width: 365px;
+		height: 47px;
+	}
+	
+	#addEmailSubmit {
+		left: 29%;
+		bottom: 43px;
+		width: 40%;
+		height: 40px;
+		font-size: 19px;
+	}
 
-		/* footer */
+	/* footer */
 		
 	footer {
 		flex-direction: row;
@@ -853,7 +773,7 @@ footer {
 
 
 
-@media all and (min-width: 1240px) {
+	@media all and (min-width: 1240px) {
 
 		/* Top navbar */
 
@@ -870,43 +790,43 @@ footer {
 			font-size: 1.4vw;
 		}
 
-	/* header */
+		/* header */
 
-	header h1 {
-		top: 39%;
-		font-size: 5vw;
+		header h1 {
+			top: 39%;
+			font-size: 5vw;
+		}
+
+		.headerSplit {
+			font-size: .3em;
+			margin-bottom: 4%;
+		}
+
+		.bannerGirl {
+			width: 14.5rem;
+			max-height: 94%;
+			bottom: -5%;
+		}
+
+		/* introduction paragraph */
+
+		#intro {
+			width: 50%;
+			margin: 4% 0px; 
+		}
+
+		#intro h2 {
+			font-size: 3vw;
+		}
+
+		#intro p {
+			font-size:1.5vw;
+		}
+
+		/* shopping links */
+
+		.shopLinks1 span, .shopLinks2 span {
+			font-size: 3.3vw;
+		
+		}
 	}
-
-	.headerSplit {
-		font-size: .3em;
-		margin-bottom: 4%;
-	}
-
-	.bannerGirl {
-		width: 14.5rem;
-		max-height: 94%;
-		bottom: -5%;
-	}
-
-	/* introduction paragraph */
-
-	#intro {
-    	width: 50%;
-    	margin: 4% 0px; 
-}
-
-	#intro h2 {
-		font-size: 3vw;
-}
-
-	#intro p {
-    	font-size:1.5vw;
-}
-
-	/* shopping links */
-
-	.shopLinks1 span, .shopLinks2 span {
-		font-size: 3.3vw;
-	
-}
-}

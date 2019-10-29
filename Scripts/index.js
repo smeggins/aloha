@@ -80,13 +80,13 @@ let allImages =[ProductHighlight1.image, ProductHighlight2.image, ProductHighlig
 
 for (let i = 0; i < imgs.length; i++) {
     
-    /*                 THIS BROKE FLICKITY: so i've mnaully added the images in HTML                     */ 
+    /*                 THIS BROKE FLICKITY: so i've manually added the images in HTML                     */ 
 
     // imgs[i].src = allImages[i];
     
     // imgs[i].alt = allName[i];
 
-    /*                                       */
+    /*                                                                                                     */
     
     category[i].innerHTML = allCategory[i];
     
@@ -99,7 +99,7 @@ for (let i = 0; i < allForms.length; i++) {
     
     allForms[i].addEventListener('submit', function(event) {
         event.preventDefault();
-          });
+    });
 };
 
 subForm.addEventListener('submit', function(test){
@@ -111,28 +111,9 @@ subForm.addEventListener('submit', function(test){
         alert('Please enter a valid email address')
     }
     allForms[0].reset();
-
 });
 
-
-
-// const about = document.getElementById('about')
-// const shop = document.getElementById('shop')
-// const featured = document.getElementById('featured')
-// const updates = document.getElementById('updates')
-// const intro = document.getElementById('intro')
-// const shopLinks = document.getElementById('shopLinks')
-// const productHL = document.getElementById('productHighlight')
-// const signUp = document.getElementById('signUp')
-
-// let smoothscroll = () => {
-//     intro.scrollIntoView()
-// }
-
-
 navLinks.forEach(function(element) {
-    console.log(navLinks)
-    console.log(element.getAttribute('href'))
     element.addEventListener('click', function(e){
         e.preventDefault();
         let link = element.getAttribute('href');
