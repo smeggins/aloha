@@ -116,4 +116,28 @@ subForm.addEventListener('submit', function(test){
 
 
 
+// const about = document.getElementById('about')
+// const shop = document.getElementById('shop')
+// const featured = document.getElementById('featured')
+// const updates = document.getElementById('updates')
+// const intro = document.getElementById('intro')
+// const shopLinks = document.getElementById('shopLinks')
+// const productHL = document.getElementById('productHighlight')
+// const signUp = document.getElementById('signUp')
+
+// let smoothscroll = () => {
+//     intro.scrollIntoView()
+// }
+
+
+navLinks.forEach(function(element) {
+    console.log(navLinks)
+    console.log(element.getAttribute('href'))
+    element.addEventListener('click', function(e){
+        e.preventDefault();
+        let link = element.getAttribute('href');
+        document.querySelector(link).scrollIntoView({behavior:'smooth'});
+    })
+});
+
 });
