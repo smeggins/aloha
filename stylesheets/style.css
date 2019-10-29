@@ -499,7 +499,7 @@ height: 100%;
 #productHighlight h2 {
 	position: relative;
 	top: 60px;
-	margin-bottom: 12%;
+	margin-bottom: 20%;
 }
 
 .carousel-cell {
@@ -510,27 +510,23 @@ height: 100%;
 	position: relative;
 }
 
-.highlightimg {
-	/**/
-}
-
-.carousel {
-	/* height: 80%;
-	top: 7%; */
-}
-
 .phCategory {
 font-size: .5em;
+margin-bottom: 5%;
 }
 
 .phName {
 	color: #e2574c;
 	font-family: "playfair";
 	font-size: 0.5em;
+	margin-bottom: 5%;
+
 }
 
 .phPrice {
 font-size: .7em;
+margin-bottom: 25%;
+
 }
 
 .categNamePrice {
@@ -538,24 +534,6 @@ font-size: .7em;
 	flex-direction: row;
 	justify-content: space-evenly;
 	align-items: center;
-}
-
-.phNavDots {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	align-items: center;
-	position: relative;
-	width: 50%;
-	top: 55%;
-	left: 25%;
-}
-.phNavDots button {
-	position: relative;
-	width: 15px;
-	height: 15px;
-	border-radius: 50%;
-	background-color: rgb(65, 65, 65);
 }
 
 	/* Sign-up */
@@ -610,7 +588,7 @@ font-size: .7em;
 #addEmail {
 	border-radius: 100px;
     padding-right: 34%;
-    padding-left: 10%;
+    padding-left: 5%;
     width: 89%;
     height: 67px;
     font-size: 1.4em;
@@ -804,6 +782,11 @@ footer {
 	}
 		
 		/* Product Highlights */
+
+		#productHighlight h2 {
+			margin-bottom: 12%;
+		}
+
 		/* Sign-up */
 
 		#signUp {

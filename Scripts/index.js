@@ -80,9 +80,13 @@ let allImages =[ProductHighlight1.image, ProductHighlight2.image, ProductHighlig
 
 for (let i = 0; i < imgs.length; i++) {
     
-    imgs[i].src = allImages[i];
+    /*                 THIS BROKE FLICKITY: so i've mnaully added the images in HTML                     */ 
+
+    // imgs[i].src = allImages[i];
     
-    imgs[i].alt = allName[i];
+    // imgs[i].alt = allName[i];
+
+    /*                                       */
     
     category[i].innerHTML = allCategory[i];
     
@@ -109,6 +113,7 @@ subForm.addEventListener('submit', function(test){
     allForms[0].reset();
 
 });
+
 
 
 });
