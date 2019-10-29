@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
 
+
 let ProductHighlight1 = {
     category: "DRESSES",
     name: "Checked Stretch Dress",
@@ -63,6 +64,7 @@ let name = document.querySelectorAll('.phName');
 let email = document.getElementById('addEmail')
 let allForms = document.getElementsByTagName("form");
 let subForm = document.getElementById('subscribe');
+let navLinks = document.querySelectorAll('.headerNavs a')
 
 let allCategory =[ProductHighlight1.category, ProductHighlight2.category, ProductHighlight3.category, ProductHighlight4.category, 
                 ProductHighlight5.category, ProductHighlight6.category, ProductHighlight7.category, ProductHighlight8.category];
@@ -104,6 +106,7 @@ subForm.addEventListener('submit', function(test){
     else {
         alert('Please enter a valid email address')
     }
+    allForms[0].reset();
 
 });
 

@@ -492,7 +492,6 @@ height: 100%;
 
 #productHighlight {
 	width: 100%;
-	height: 1000px;
 	text-align: center;
 	font-size: 50px;
 }
@@ -500,7 +499,7 @@ height: 100%;
 #productHighlight h2 {
 	position: relative;
 	top: 60px;
-	margin-bottom: 30px;
+	margin-bottom: 12%;
 }
 
 .carousel-cell {
@@ -509,32 +508,29 @@ height: 100%;
 	justify-content: center;
 	align-items: center;
 	position: relative;
-	height: 800px;
 }
 
 .highlightimg {
-	width: 450px;
+	/**/
 }
 
 .carousel {
-	height: 80%;
-	top: 7%;
+	/* height: 80%;
+	top: 7%; */
 }
 
 .phCategory {
 font-size: .5em;
-margin-bottom: 40px;
 }
 
 .phName {
 	color: #e2574c;
 	font-family: "playfair";
-	margin-bottom: 40px;
+	font-size: 0.5em;
 }
 
 .phPrice {
 font-size: .7em;
-margin-bottom: 40px;
 }
 
 .categNamePrice {
@@ -574,7 +570,8 @@ margin-bottom: 40px;
     background-repeat: no-repeat;
     text-align: center;
     background-size: 326%;
-    margin-bottom: 7px;
+	margin-bottom: 7px;
+	margin-top: 8%;
 }
 
 .signUpContainer {
