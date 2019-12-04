@@ -211,6 +211,24 @@ b {
 
 /* start of Top Nav bar */
 
+.screen-reader-text {
+	position: absolute !important;
+	clip: rect(1px, 1px, 1px, 1px);
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	display: block;
+	clip: auto !important;
+	width: auto;
+	height: auto;
+	z-index: 1000000;
+	top: 5px;
+	left: 5px;
+}
+
 .topNav {
     display: flex;
     align-items: center;
