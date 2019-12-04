@@ -30,7 +30,7 @@ As of the completion of this project I feel confident in my ability to:
 
 ### Installing
 
-
+Simply visit https://smeggins.github.io/aloha/ and enjoy the site
 
 ## Built With
 
